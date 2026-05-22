@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#2a7a72" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Rhio" />
+  <link rel="apple-touch-icon" href="assets/icona.png" />
+  <title>Rhio Sushi &amp; Poké</title>
+  <meta name="description" content="Rhio Sushi &amp; Poke — Il sushi dalle sfumature esotiche. Consegna a domicilio e asporto. San Pietro in Cariano, Vignola, Villafranca di Verona." />
+  <meta property="og:title" content="Rhio Sushi &amp; Poké" />
+  <meta property="og:description" content="Il sushi dalle sfumature esotiche — Non siamo all you can eat." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="#" class="nav__logo">
+      <img src="assets/icona.png" alt="Rhio" class="nav__logo-img" />
+    </a>
+
+    <ul class="nav__links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#menu-section">Menù</a></li>
+      <li><a href="#orari">Orari</a></li>
+      <li><a href="#sedi">Sedi</a></li>
+    </ul>
+
+    <a href="#contatti" class="nav__order">ORDINA</a>
+
+    <!-- mobile overlay -->
+    <div class="nav__overlay" id="navOverlay"></div>
+    <ul class="nav__menu" id="navMenu">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#menu-section">Menù</a></li>
+      <li><a href="#orari">Orari</a></li>
+      <li><a href="#sedi">Sedi</a></li>
+      <li><a href="#contatti" class="nav__menu-cta">Ordina</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══ HERO ════════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__media">
+      <img src="assets/quadro.png" alt="Rhio Sushi &amp; Poké" class="hero__img" id="heroImg" />
+    </div>
+    <div class="hero__content">
+      <img src="assets/logo.png" alt="Rhio Sushi &amp; Poké" class="hero__logo" />
+      <a href="https://rhio.web2.yellgo.cloud" target="_blank" class="hero__btn">Scopri il menu</a>
+    </div>
+    <div class="hero__scroll-hint">
+      <span class="hero__scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ══ INTRO ════════════════════════════════════════════════ -->
+  <section class="intro" id="intro">
+    <div class="intro__text fade-up">
+      <h2 class="intro__title">Un viaggio sensoriale</h2>
+      <p class="intro__body">
+        Da Rhio, la cucina orientale prende vita attraverso sapori tradizionali rivisitati con creatività 
+        e note tropicali. <br>Ogni piatto è un racconto: ingredienti selezionati, tecnica artigianale, 
+        presentazione curata nei minimi dettagli.
+      </p>
+      <p class="intro__body">
+        Offriamo servizi di <strong>consegna a domicilio</strong> e <strong>asporto</strong>, 
+        con tavoli disponibili per chi vuole vivere l'esperienza direttamente da noi.
+      </p>
+      <p class="intro__payment">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        Alla consegna accettiamo <strong>Contanti</strong>, <strong>POS</strong> e <strong>Satispay</strong>
+      </p>
+    </div>
+    <div class="intro__media fade-up">
+      <img src="assets/box.png" alt="Rhio box" />
+    </div>
+  </section>
+
+  <!-- ══ FILOSOFIA (non AYCE) ════════════════════════════════ -->
+  <section class="filosofia" id="filosofia">
+    <div class="filosofia__media">
+      <img src="assets/qualita.png" alt="La nostra filosofia" />
+    </div>
+    <div class="filosofia__content fade-up">
+      <p class="tag">La nostra filosofia</p>
+      <h2 class="filosofia__title">Non siamo<br><strong>all you can eat</strong></h2>
+      <p class="filosofia__body">
+        Da Rhio la quantità non è mai l'obiettivo.
+        <br>Ogni piatto viene preparato con ingredienti 
+        freschi e selezionati, scelti ogni giorno per garantirti il massimo della qualità. 
+        <br>Crediamo che un'esperienza gastronomica autentica nasca dalla cura, non dalla 
+        sovrabbondanza.
+      </p>
+      <p class="filosofia__claim">La qualità, prima di tutto.</p>
+    </div>
+  </section>
+
+  <!-- ══ MENU ═════════════════════════════════════════════════ -->
+  <section class="menu-section" id="menu-section">
+    <div class="menu-section__header fade-up">
+      <p class="tag">Cosa offriamo</p>
+      <h2 class="menu-section__title">IL MENU</h2>
+      <p class="menu-section__sub">Ogni piatto preparato al momento con ingredienti freschi</p>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-item fade-up">
+        <div class="menu-item__img">
+          <img src="assets/sashimi.png" alt="Nigiri e Sashimi" />
+        </div>
+        <div class="menu-item__body">
+          <h3>Sashimi</h3>
+          <p>La semplicità giapponese nella sua forma più pura.</p>
+        </div>
+      </div>
+      <div class="menu-item fade-up">
+        <div class="menu-item__img">
+          <img src="assets/rolls.png" alt="Maki e Roll" />
+        </div>
+        <div class="menu-item__body">
+          <h3>Maki &amp; Roll</h3>
+          <p>Rotoli creativi con abbinamenti originali tra tradizione giapponese e tocchi esotici.</p>
+        </div>
+      </div>
+      <div class="menu-item fade-up">
+        <div class="menu-item__img">
+          <img src="assets/poke.png" alt="Poke Bowl" />
+        </div>
+        <div class="menu-item__body">
+          <h3>Poké Bowl</h3>
+          <p>Ciotole colorate con riso, pesce fresco, verdure e salse aromatiche tropicali.</p>
+        </div>
+      </div>
+      <div class="menu-item fade-up">
+        <div class="menu-item__img">
+          <img src="assets/speciale.png" alt="Speciali della casa" />
+        </div>
+        <div class="menu-item__body">
+          <h3>Speciali della casa</h3>
+          <p>Creazioni esclusive dei nostri chef, nate dalla fusione tra Oriente e sfumature tropicali.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-section__cta fade-up">
+      <a href="https://rhio.web2.yellgo.cloud" target="_blank" class="btn-teal">Vedi il menu completo</a>
+    </div>
+  </section>
+
+  <!-- ══ SEDI ══════════════════════════════════════════════════ -->
+  <section class="sedi" id="sedi">
+    <div class="sedi__header fade-up">
+      <p class="tag tag--light">Dove siamo</p>
+      <h2 class="sedi__title">LE NOSTRE SEDI</h2>
+    </div>
+
+    <div class="sedi__grid">
+
+      <div class="sede-card fade-up">
+        <div class="sede-card__img">
+          <img src="assets/sede-sanpietro.jpg" alt="San Pietro in Cariano" />
+        </div>
+        <div class="sede-card__body">
+          <h3 class="sede-card__city">San Pietro in Cariano</h3>
+          <address>Via Valpolicella, 1F — 37029 (VR)</address>
+          <div class="sede-card__contacts">
+            <a href="tel:04511170331">
+              <svg class="sede-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l1.87-1.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              045 1117 0331
+            </a>
+            <a href="https://wa.me/3314126073">
+              <svg class="sede-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              331 412 6073
+            </a>
+          </div>
+          <div class="sede-card__delivery">
+            <strong>Consegna gratuita</strong> · minimo 20€<br />
+            <span>San Pietro, Sant'Ambrogio, Bussolengo, Pescantina, Fumane, Marano, Parona, Negrar</span>
+          </div>
+          <a href="https://www.google.com/maps?q=Via+Valpolicella+1F+San+Pietro+in+Cariano" target="_blank" class="sede-card__map">
+            <svg class="sede-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Indicazioni stradali
+          </a>
+        </div>
+      </div>
+
+      <div class="sede-card fade-up">
+        <div class="sede-card__img">
+          <img src="assets/sede-villafranca.jpg" alt="Villafranca di Verona" />
+        </div>
+        <div class="sede-card__body">
+          <h3 class="sede-card__city">Villafranca di Verona</h3>
+          <address>Corso Garibaldi, 44 — 37069 (VR)</address>
+          <div class="sede-card__contacts">
+            <a href="tel:04511171384">
+              <svg class="sede-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l1.87-1.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              045 1117 1384
+            </a>
+            <a href="https://wa.me/3276078914">
+              <svg class="sede-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              327 607 8914
+            </a>
+          </div>
+          <div class="sede-card__delivery">
+            <strong>Consegna 2€</strong> · minimo 20€<br />
+            <span>Villafranca, Sommacampagna, Castel d'Azzano, Povegliano, Nogarole, Valeggio, Mozzecane</span>
+          </div>
+          <a href="https://www.google.com/maps?q=Corso+Garibaldi+44+Villafranca+di+Verona" target="_blank" class="sede-card__map">
+            <svg class="sede-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Indicazioni stradali
+          </a>
+        </div>
+      </div>
+
+      <div class="sede-card fade-up">
+        <div class="sede-card__img">
+          <img src="assets/sede-vignola.jpg" alt="Vignola" />
+        </div>
+        <div class="sede-card__body">
+          <h3 class="sede-card__city">Vignola</h3>
+          <address>Viale Trento Trieste, 2 — 41058 (MO)</address>
+          <div class="sede-card__contacts">
+            <a href="tel:0598720341">
+              <svg class="sede-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l1.87-1.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              059 872 0341
+            </a>
+            <a href="https://wa.me/3286824931">
+              <svg class="sede-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              328 682 4931
+            </a>
+          </div>
+          <div class="sede-card__delivery">
+            <strong>Consegna 2€</strong> · minimo 20€<br />
+            <span>Vignola, Savignano, Castelvetro, Castelnuovo Rangone, Spilamberto, Marano, Bazzano</span>
+          </div>
+          <a href="https://www.google.com/maps?q=Viale+Trento+Trieste+2+Vignola" target="_blank" class="sede-card__map">
+            <svg class="sede-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Indicazioni stradali
+          </a>
+        </div>
+      </div>
+
+      <div class="sede-card fade-up">
+        <div class="sede-card__img">
+          <img src="assets/sede-maranello.jpg" alt="Maranello" />
+        </div>
+        <div class="sede-card__body">
+          <h3 class="sede-card__city">Maranello</h3>
+          <address>Piazza Giovanni Amendola, 1/2 — 41053 (MO)</address>
+          <div class="sede-card__contacts">
+            <a href="tel:">
+              <svg class="sede-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l1.87-1.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              —
+            </a>
+            <a href="https://wa.me/">
+              <svg class="sede-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              —
+            </a>
+          </div>
+          <div class="sede-card__delivery">
+            <strong>Consegna</strong> · minimo 20€<br />
+            <span>Maranello e dintorni</span>
+          </div>
+          <a href="https://www.google.com/maps?q=Piazza+Giovanni+Amendola+1+Maranello" target="_blank" class="sede-card__map">
+            <svg class="sede-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Indicazioni stradali
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ AREA SERVITA ══════════════════════════════════════════ -->
+  <section class="area-servita" id="area-servita">
+    <div class="area-servita__inner fade-up">
+      <h2 class="area-servita__title">Area Servita</h2>
+      <p class="area-servita__sub">
+        Inserisci il tuo indirizzo direttamente nell'app di ordinazione:
+        verificherà automaticamente se consegniamo nella tua zona.
+        <em>In caso di dubbi contattaci telefonicamente.</em>
+      </p>
+      <a href="https://rhio.web2.yellgo.cloud" target="_blank" class="area-servita__btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Verifica il tuo indirizzo
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ ORARI ═════════════════════════════════════════════════ -->
+  <section class="orari" id="orari">
+    <div class="orari__media">
+      <img src="assets/sala.png" alt="Rhio sala" />
+    </div>
+    <div class="orari__content fade-up">
+      <p class="tag">Quando ci trovi</p>
+      <h2 class="orari__title">ORARI DI APERTURA</h2>
+      <ul class="orari__list">
+        <li>
+          <span class="orari__day">Lunedì – Giovedì</span>
+          <span class="orari__time">11:30–15:00 &nbsp;|&nbsp; 18:00–22:00</span>
+        </li>
+        <li>
+          <span class="orari__day">Venerdì &amp; Sabato</span>
+          <span class="orari__time">11:30–15:00 &nbsp;|&nbsp; 18:00–22:30</span>
+        </li>
+        <li class="orari__note">
+          <span class="orari__day">Domenica</span>
+          <span class="orari__time">18:00–22:00 <em>(pranzo chiuso)</em></span>
+        </li>
+      </ul>
+      <p class="orari__prenotazione">
+        Prenota via WhatsApp o chiamaci direttamente.
+      </p>
+      <a href="https://rhio.web2.yellgo.cloud" target="_blank" class="orari__btn">Ordina online</a>
+    </div>
+  </section>
+
+  <!-- ══ CONTATTI / ORDER CTA ══════════════════════════════════ -->
+  <section class="contatti" id="contatti">
+    <div class="contatti__header fade-up">
+      <p class="tag tag--light">Ordina adesso</p>
+      <h2 class="contatti__title">COME ORDINARE</h2>
+      <p class="contatti__sub">Scegli il modo che preferisci</p>
+    </div>
+
+    <div class="contatti__grid">
+
+      <div class="contatti__way contatti__way--centered fade-up">
+        <div class="contatti__way-icon">
+          <!-- Cursore / ordine online -->
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="28" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+            <path d="M18 32 C18 24.27 24.27 18 32 18 C39.73 18 46 24.27 46 32 C46 39.73 39.73 46 32 46 C24.27 46 18 39.73 18 32Z" stroke="white" stroke-width="2.2" fill="none"/>
+            <path d="M18 32 H46 M32 18 C28 24 26 28 26 32 C26 36 28 40 32 46 C36 40 38 36 38 32 C38 28 36 24 32 18Z" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Online</h3>
+        <p class="contatti__way-desc">Ordina direttamente dal nostro sito</p>
+        <a href="https://rhio.web2.yellgo.cloud" target="_blank" class="contatti__btn">Ordina dal sito →</a>
+      </div>
+
+      <div class="contatti__way fade-up">
+        <div class="contatti__way-icon">
+          <!-- WhatsApp minimal outline -->
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 8C18.745 8 8 18.745 8 32c0 4.42 1.21 8.56 3.32 12.1L8 56l12.24-3.28A23.9 23.9 0 0 0 32 56c13.255 0 24-10.745 24-24S45.255 8 32 8z" stroke="white" stroke-width="2" fill="none" stroke-linejoin="round"/>
+            <path d="M23 26.5c0 0 1.5 2.5 3.5 4.5s4.5 3.5 4.5 3.5l2-2c.5-.5 1.2-.6 1.8-.3l4 2c.6.3.7 1.1.3 1.6l-1.5 2c-.5.7-1.4 1-2.2.7C30 36.9 24 31 23.5 26.2c-.1-.8.3-1.6 1-2l2-1.2c.6-.4 1.4-.2 1.8.4l1.8 3.1c.3.5.2 1.2-.3 1.6L28 29.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>WhatsApp</h3>
+        <p class="contatti__way-desc">Scrivici, rispondiamo subito</p>
+        <div class="contatti__links">
+          <a href="https://wa.me/3314126073">
+            <span class="contatti__city">San Pietro in Cariano</span>
+            <strong>331 412 6073</strong>
+          </a>
+          <a href="https://wa.me/3286824931">
+            <span class="contatti__city">Vignola</span>
+            <strong>328 682 4931</strong>
+          </a>
+          <a href="https://wa.me/3276078914">
+            <span class="contatti__city">Villafranca</span>
+            <strong>327 607 8914</strong>
+          </a>
+        </div>
+      </div>
+
+      <div class="contatti__way fade-up">
+        <div class="contatti__way-icon">
+          <!-- Telefono -->
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 14H28L31 22L27.5 24.5C29.5 28.5 35.5 34.5 39.5 36.5L42 33L50 36V42C50 42 48 50 38 48C28 46 16 34 14 24C12 14 22 14 22 14Z" stroke="white" stroke-width="2.2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Telefono</h3>
+        <p class="contatti__way-desc">Chiamaci direttamente</p>
+        <div class="contatti__links">
+          <a href="tel:04511170331">
+            <span class="contatti__city">San Pietro in Cariano</span>
+            <strong>045 1117 0331</strong>
+          </a>
+          <a href="tel:0598720341">
+            <span class="contatti__city">Vignola</span>
+            <strong>059 872 0341</strong>
+          </a>
+          <a href="tel:04511171384">
+            <span class="contatti__city">Villafranca</span>
+            <strong>045 1117 1384</strong>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="Rhio Sushi &amp; Poké" class="footer__logo-img" />
+        <p class="footer__claim">Il sushi dalle sfumature esotiche</p>
+        <address class="footer__legal">
+          Via Valpolicella, 1/F<br />
+          37029 &ndash; San Pietro in Cariano (VR)<br />
+          (+39) 045 1117 0331<br />
+          P.IVA 04859080238
+        </address>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <p class="footer__col-title">Sedi</p>
+          <ul>
+            <li>Via Valpolicella, 1F — San Pietro in Cariano (VR)</li>
+            <li>Corso Garibaldi, 44 — Villafranca di Verona (VR)</li>
+            <li>Viale Trento Trieste, 2 — Vignola (MO)</li>
+            <li>Piazza G. Amendola, 1/2 — Maranello (MO)</li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Social</p>
+          <ul>
+            <li><a href="https://www.facebook.com/rhio.sushipoke" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/rhio.sushi/" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Info</p>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 RHIO SRL &nbsp;&middot;&nbsp; <a href="mailto:info@rhio.it">info@rhio.it</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

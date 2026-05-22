@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Cookie Policy — Rhio Sushi &amp; Poké</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .legal-page {
+      background: #faf9f7;
+      min-height: 100vh;
+      padding: calc(var(--nav-h) + 3rem) 5vw 4rem;
+    }
+    .legal-page__inner {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .legal-page__back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-title);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 2.5rem;
+      transition: color 0.2s;
+    }
+    .legal-page__back:hover { color: var(--teal-dark); }
+    .legal-page__back svg { width: 14px; height: 14px; }
+
+    .legal-page h1 {
+      font-family: var(--font-title);
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: 0.04em;
+      margin-bottom: 0.4rem;
+    }
+    .legal-page__site {
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+      color: var(--light-text);
+      margin-bottom: 2.5rem;
+    }
+    .legal-page__intro {
+      font-family: var(--font-body);
+      font-size: 0.92rem;
+      color: var(--mid);
+      line-height: 1.75;
+      border-left: 3px solid var(--teal);
+      padding-left: 1.2rem;
+      margin-bottom: 2.5rem;
+    }
+    .legal-page h2 {
+      font-family: var(--font-title);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin: 2.5rem 0 1rem;
+    }
+    .legal-page h3 {
+      font-family: var(--font-title);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--dark);
+      margin: 1.8rem 0 0.6rem;
+      opacity: 0.7;
+    }
+    .legal-page p {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .legal-page ul {
+      margin: 0.5rem 0 1.2rem 1.4rem;
+    }
+    .legal-page ul li {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.8;
+      margin-bottom: 0.4rem;
+    }
+    .legal-page ul li strong {
+      color: var(--dark);
+      font-weight: 600;
+    }
+    .legal-page address {
+      font-style: normal;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.8;
+    }
+    .legal-page a { color: var(--teal); text-decoration: underline; text-underline-offset: 3px; }
+    .legal-page a:hover { color: var(--teal-dark); }
+    .legal-divider {
+      border: none;
+      border-top: 1px solid var(--beige);
+      margin: 2.5rem 0;
+    }
+    .legal-tracker-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0 1.5rem;
+    }
+    .legal-tracker-item {
+      background: #fff;
+      border: 1px solid var(--beige);
+      border-radius: 4px;
+      padding: 1.1rem 1.3rem;
+    }
+    .legal-tracker-item h4 {
+      font-family: var(--font-title);
+      font-size: 0.63rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.4rem;
+    }
+    .legal-tracker-item p {
+      font-size: 0.84rem;
+      margin-bottom: 0;
+    }
+    .legal-definition {
+      border-left: 2px solid var(--beige);
+      padding-left: 1rem;
+      margin-bottom: 1.2rem;
+    }
+    .legal-definition h3 {
+      opacity: 1;
+      color: var(--dark);
+      margin-top: 0;
+      margin-bottom: 0.3rem;
+    }
+    .legal-footer-note {
+      font-size: 0.82rem;
+      color: var(--light-text);
+      font-style: italic;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--beige);
+    }
+    @media (max-width: 480px) {
+      .legal-page { padding-top: calc(var(--nav-h) + 2rem); }
+      .legal-tracker-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">
+      <img src="assets/icona.png" alt="Rhio" class="nav__logo-img" />
+    </a>
+    <a href="index.html" class="nav__order">← Home</a>
+  </nav>
+
+  <!-- ══ COOKIE POLICY ══════════════════════════════════════ -->
+  <main class="legal-page">
+    <div class="legal-page__inner">
+
+      <a href="index.html" class="legal-page__back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Torna al sito
+      </a>
+
+      <h1>Cookie Policy</h1>
+      <p class="legal-page__site">di www.rhio.it</p>
+
+      <p class="legal-page__intro">
+        Questo documento contiene informazioni in merito alle tecnologie che consentono a questa Applicazione di raggiungere gli scopi descritti di seguito. Tali tecnologie permettono al Titolare di raccogliere e salvare informazioni (per esempio tramite l'utilizzo di Cookie) o di utilizzare risorse (per esempio eseguendo uno script) sul dispositivo dell'Utente quando quest'ultimo interagisce con questa Applicazione.
+      </p>
+
+      <p>Per semplicità, in questo documento tali tecnologie sono sinteticamente definite "Strumenti di Tracciamento", salvo vi sia ragione di differenziare. Per esempio, sebbene i Cookie possano essere usati in browser sia web sia mobili, sarebbe fuori luogo parlare di Cookie nel contesto di applicazioni per dispositivi mobili, dal momento che si tratta di Strumenti di Tracciamento che richiedono la presenza di un browser. Per questo motivo, all'interno di questo documento il termine Cookie è utilizzato solo per indicare in modo specifico quel particolare tipo di Strumento di Tracciamento.</p>
+
+      <p>Alcune delle finalità per le quali vengono impiegati Strumenti di Tracciamento potrebbero, inoltre richiedere il consenso dell'Utente. Se viene prestato il consenso, esso può essere revocato liberamente in qualsiasi momento seguendo le istruzioni contenute in questo documento.</p>
+
+      <p>Questa Applicazione utilizza Strumenti di Tracciamento gestiti direttamente dal Titolare (comunemente detti Strumenti di Tracciamento "di prima parte") e Strumenti di Tracciamento che abilitano servizi forniti da terzi (comunemente detti Strumenti di Tracciamento "di terza parte"). Se non diversamente specificato all'interno di questo documento, tali terzi hanno accesso ai rispettivi Strumenti di Tracciamento. Durata e scadenza dei Cookie e degli altri Strumenti di Tracciamento simili possono variare a seconda di quanto impostato dal Titolare o da ciascun fornitore terzo. Alcuni di essi scadono al termine della sessione di navigazione dell'Utente.</p>
+
+      <p>In aggiunta a quanto specificato nella descrizione di ciascuna delle categorie di seguito riportate, gli Utenti possono ottenere informazioni più dettagliate ed aggiornate nella privacy policy dei rispettivi fornitori terzi o contattando il Titolare.</p>
+
+      <h2>Come questa Applicazione utilizza gli Strumenti di Tracciamento</h2>
+
+      <h3>Necessari</h3>
+      <p>Questa Applicazione utilizza Cookie comunemente detti "tecnici" o altri Strumenti di Tracciamento analoghi per svolgere attività strettamente necessarie a garantire il funzionamento o la fornitura del Servizio.</p>
+      <p><strong>Strumenti di Tracciamento gestiti da terze parti</strong></p>
+      <div class="legal-tracker-grid">
+        <div class="legal-tracker-item">
+          <h4>Cloudflare</h4>
+          <p>Cloudflare, Inc.</p>
+        </div>
+      </div>
+
+      <h3>Esperienza</h3>
+      <p>Questa Applicazione utilizza Strumenti di Tracciamento per migliorare la qualità della user experience e consentire le interazioni con contenuti, network e piattaforme esterni.</p>
+      <p><strong>Strumenti di Tracciamento gestiti da terze parti</strong></p>
+      <div class="legal-tracker-grid">
+        <div class="legal-tracker-item">
+          <h4>Google Fonts</h4>
+          <p>Google Ireland Limited</p>
+        </div>
+      </div>
+
+      <h3>Misurazione</h3>
+      <p>Questa Applicazione utilizza Strumenti di Tracciamento per misurare il traffico e analizzare il comportamento degli Utenti per migliorare il Servizio.</p>
+      <p><strong>Strumenti di Tracciamento gestiti da terze parti</strong></p>
+      <div class="legal-tracker-grid">
+        <div class="legal-tracker-item">
+          <h4>Google Analytics (Universal Analytics)</h4>
+          <p>Google Ireland Limited</p>
+        </div>
+      </div>
+
+      <hr class="legal-divider" />
+
+      <h2>Come gestire le preferenze e prestare o revocare il consenso</h2>
+      <p>Qualora l'utilizzo dei Tracker sia basato sul consenso, l'Utente può fornire o revocare tale consenso impostando o aggiornando le proprie preferenze tramite il relativo pannello delle scelte in materia di privacy disponibile su questa Applicazione.</p>
+      <p>Per quanto riguarda Strumenti di Tracciamento di terza parte, gli Utenti possono gestire le proprie preferenze visitando il relativo link di opt out (qualora disponibile), utilizzando gli strumenti descritti nella privacy policy della terza parte o contattando quest'ultima direttamente.</p>
+
+      <h3>Come controllare o eliminare Cookie tramite le impostazioni del browser</h3>
+      <p>Gli Utenti possono utilizzare le impostazioni del proprio browser per vedere, bloccare o cancellare Cookie e tecnologie simili. Le impostazioni del browser, tuttavia, non consentono un controllo granulare del consenso per categoria.</p>
+      <p>Informazioni per i principali browser:</p>
+      <ul>
+        <li><a href="https://support.google.com/chrome/answer/95647" target="_blank">Google Chrome</a></li>
+        <li><a href="https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie" target="_blank">Mozilla Firefox</a></li>
+        <li><a href="https://support.apple.com/it-it/guide/safari/sfri11471/mac" target="_blank">Apple Safari</a></li>
+        <li><a href="https://support.microsoft.com/it-it/topic/eliminare-e-gestire-i-cookie-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank">Microsoft Internet Explorer</a></li>
+        <li><a href="https://support.microsoft.com/it-it/microsoft-edge/eliminare-i-cookie-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank">Microsoft Edge</a></li>
+        <li><a href="https://support.brave.com/hc/en-us/articles/360022806212" target="_blank">Brave</a></li>
+        <li><a href="https://help.opera.com/en/latest/web-preferences/#cookies" target="_blank">Opera</a></li>
+      </ul>
+      <p>Gli Utenti possono inoltre gestire alcuni Strumenti di Tracciamento per applicazioni mobili disattivandoli tramite le apposite impostazioni del dispositivo.</p>
+
+      <h3>Conseguenze legate al rifiuto degli Strumenti di Tracciamento</h3>
+      <p>Gli Utenti sono liberi di decidere se permettere o meno l'utilizzo di Strumenti di Tracciamento. Tuttavia, si noti che gli Strumenti di Tracciamento consentono a questa Applicazione di fornire agli Utenti un'esperienza migliore e funzionalità avanzate. Pertanto, qualora l'Utente decida di bloccarli, il Titolare potrebbe non essere in grado di fornire le relative funzionalità.</p>
+
+      <hr class="legal-divider" />
+
+      <h2>Titolare del Trattamento dei Dati</h2>
+      <address>
+        Rhio srl<br />
+        Via Valpolicella, 1 F<br />
+        37029 San Pietro in Cariano (VR)<br /><br />
+        Indirizzo email del Titolare: <a href="mailto:info@rhio.it">info@rhio.it</a>
+      </address>
+
+      <p style="margin-top:1.2rem;">Dal momento che l'uso di Strumenti di Tracciamento di terza parte su questa Applicazione non può essere completamente controllato dal Titolare, ogni riferimento specifico a Strumenti di Tracciamento di terza parte è da considerarsi indicativo. Per ottenere informazioni complete, gli Utenti sono gentilmente invitati a consultare la privacy policy dei rispettivi servizi terzi elencati in questo documento.</p>
+      <p>Data l'oggettiva complessità di identificazione delle tecnologie di tracciamento, gli Utenti sono invitati a contattare il Titolare qualora volessero ricevere ulteriori informazioni in merito all'utilizzo di tali tecnologie su questa Applicazione.</p>
+
+      <hr class="legal-divider" />
+
+      <h2>Definizioni e riferimenti legali</h2>
+
+      <div class="legal-definition">
+        <h3>Dati Personali (o Dati)</h3>
+        <p>Costituisce dato personale qualunque informazione che, direttamente o indirettamente, anche in collegamento con qualsiasi altra informazione, ivi compreso un numero di identificazione personale, renda identificata o identificabile una persona fisica.</p>
+      </div>
+      <div class="legal-definition">
+        <h3>Dati di Utilizzo</h3>
+        <p>Sono le informazioni raccolte automaticamente attraverso questa Applicazione, tra cui: gli indirizzi IP o i nomi a dominio dei computer utilizzati dall'Utente, gli indirizzi URI, l'orario della richiesta, il metodo utilizzato, la dimensione del file ottenuto in risposta, il codice di stato della risposta, il paese di provenienza, le caratteristiche del browser e del sistema operativo, le varie connotazioni temporali della visita e i dettagli relativi all'itinerario seguito all'interno dell'Applicazione.</p>
+      </div>
+      <div class="legal-definition">
+        <h3>Utente</h3>
+        <p>L'individuo che utilizza questa Applicazione che, salvo ove diversamente specificato, coincide con l'Interessato.</p>
+      </div>
+      <div class="legal-definition">
+        <h3>Interessato</h3>
+        <p>La persona fisica cui si riferiscono i Dati Personali.</p>
+      </div>
+      <div class="legal-definition">
+        <h3>Responsabile del Trattamento (o Responsabile)</h3>
+        <p>La persona fisica, giuridica, la pubblica amministrazione e qualsiasi altro ente che tratta dati personali per conto del Titolare, secondo quanto esposto nella presente privacy policy.</p>
+      </div>
+      <div class="legal-definition">
+        <h3>Titolare del Trattamento (o Titolare)</h3>
+        <p>La persona fisica o giuridica, l'autorità pubblica, il servizio o altro organismo che, singolarmente o insieme ad altri, determina le finalità e i mezzi del trattamento di dati personali e gli strumenti adottati.</p>
+      </div>
+      <div class="legal-definition">
+        <h3>Questa Applicazione</h3>
+        <p>Lo strumento hardware o software mediante il quale sono raccolti e trattati i Dati Personali degli Utenti.</p>
+      </div>
+      <div class="legal-definition">
+        <h3>Servizio</h3>
+        <p>Il Servizio fornito da questa Applicazione così come definito nei relativi termini su questo sito/applicazione.</p>
+      </div>
+      <div class="legal-definition">
+        <h3>Unione Europea (o UE)</h3>
+        <p>Salvo ove diversamente specificato, ogni riferimento all'Unione Europea contenuto in questo documento si intende esteso a tutti gli attuali stati membri dell'Unione Europea e dello Spazio Economico Europeo.</p>
+      </div>
+      <div class="legal-definition">
+        <h3>Cookie</h3>
+        <p>I Cookie sono Strumenti di Tracciamento che consistono in piccole porzioni di dati conservate all'interno del browser dell'Utente.</p>
+      </div>
+      <div class="legal-definition">
+        <h3>Strumento di Tracciamento</h3>
+        <p>Per Strumento di Tracciamento s'intende qualsiasi tecnologia — es. Cookie, identificativi univoci, web beacons, script integrati, e-tag e fingerprinting — che consenta di tracciare gli Utenti, per esempio raccogliendo o salvando informazioni sul dispositivo dell'Utente.</p>
+      </div>
+      <div class="legal-definition">
+        <h3>Riferimenti legali</h3>
+        <p>Ove non diversamente specificato, questa policy riguarda esclusivamente questa Applicazione.</p>
+      </div>
+
+      <p class="legal-footer-note">
+        Ultima modifica: 28 giugno 2022<br /><br />
+        iubenda ospita questo contenuto e raccoglie solo i Dati Personali strettamente necessari alla sua fornitura.
+      </p>
+
+    </div>
+  </main>
+
+  <div class="footer__bottom" style="background:var(--dark);">
+    <p>&copy; 2026 Rhio Sushi &amp; Pok&egrave; &nbsp;&middot;&nbsp; <a href="mailto:info@rhio.it" style="color:rgba(255,255,255,0.35);">info@rhio.it</a></p>
+  </div>
+
+</body>
+</html>
